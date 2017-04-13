@@ -15,7 +15,8 @@ global.$ = {
   gp: require('gulp-load-plugins')(),
   sprite: require('gulp.spritesmith'),
   buffer: require('vinyl-buffer'),
-  merge: require('merge-stream')
+  merge: require('merge-stream'),
+  named: require('vinyl-named')
 };
 
 $.path.task.forEach(function(taskPath) {
@@ -28,7 +29,7 @@ $.gulp.task('default', $.gulp.series(
     'sass',
     'pug',
     'js:foundation',
-    'js:process',
+    'webpack',
     'copy:image',
     'css:foundation',
     'sprite:svg',
