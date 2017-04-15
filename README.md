@@ -1,4 +1,4 @@
-# Учебная сборка Loftschool - Alexander Kravchenko
+# Учебная сборка Loftschool - Panfilov Artem
 
 > Сборка работает на gulp версии 4.0. 
 
